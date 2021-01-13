@@ -1,0 +1,37 @@
+.pagination {
+  position: fixed;
+  top: 185px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+}
+
+.pagi {
+
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+}
+
+.page-item {
+  padding: 0 10px;
+  background: #796f6f;
+  margin: 3px;
+  transition: 0.4s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 5;
+}
+
+.page-item:hover {
+  transform: scale(1.4);
+  background: beige;
+  border: 2px solid
+  turquoise;
+  
+  ;
+}
