@@ -1,7 +1,7 @@
 .pagination {
   position: fixed;
-  top: 185px;
-  right: 20px;
+  top: 40px;
+  right: 5px;
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -17,8 +17,8 @@
 }
 
 .page-item {
-  padding: 0 10px;
-  background: #796f6f;
+  padding: 0 5px;
+  background: #333333;
   margin: 3px;
   transition: 0.4s ease-in-out;
   border-radius: 5px;

@@ -1,7 +1,13 @@
-.search{
-padding: 40px 0;
+.search_Container{
+padding: 15px 0;
 background: #333333;
 
+}
+
+form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 input {
@@ -10,5 +16,11 @@ input {
     font-size: 20px;
     border-radius: 5px;
     width: 60%;
-    margin: auto;
+  }
+
+  .search{
+    padding: 10px 20px;
+    width: auto;
+    font-weight: bolder;
+    
   }

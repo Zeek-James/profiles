@@ -4,9 +4,12 @@ export const Main = ({post}) => {
     return (
 <div
           className='profile_front'
-          // className={!profileDetails ? "slide" : "profile_front"}
-        >
+      >
+        <div>
+
           <p className="user_Name">{post.UserName}</p>
+          
+        </div>
 
           <div className="profile_fadeTop" />
           <div className="name">
