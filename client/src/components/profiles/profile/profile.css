@@ -10,12 +10,18 @@
   z-index: 8;
 }
 
-
 .list_GroupItem:hover {
   transform: scale(1.08);
 }
 
-
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(24, 36, 36, 0.8);
+  width: 100%;
+  height: 100%;
+}
 
 .profile_front,
 .profile_back {
@@ -36,9 +42,6 @@
   background: #ffffff;
 }
 
-
-
-
 .profile_Block {
   position: relative;
   transition: all 0.5s ease-in-out;
@@ -51,8 +54,6 @@
   max-width: 600px;
   z-index: 200;
 }
-
-
 
 .close {
   transition: all 0.5s ease-in-out;
@@ -107,7 +108,7 @@
   top: 10px;
 }
 
-.domain_Name span{
+.domain_Name span {
   /* font-size: smaller; */
   font-weight: lighter;
   margin-left: 10px;
@@ -142,12 +143,11 @@
   top: -10px;
   margin: 2px 0;
   padding: 0;
-   font-size: small; 
-  
+  font-size: small;
 }
 
 .URL {
-position: relative;
+  position: relative;
   margin-bottom: 35px;
   background: rgba(41, 38, 38, 0.2);
   padding: 5px 0;
@@ -160,43 +160,38 @@ position: relative;
   max-width: 250px;
 }
 
-.URL::-webkit-scrollbar{
+.URL::-webkit-scrollbar {
   display: none;
   margin-bottom: 10px;
 }
 
 .geo {
   position: relative;
-  top:-20px;
-
+  top: -20px;
 }
 
 .co_ord {
   margin-top: 10px;
 }
 
-.co_ord .lat{
+.co_ord .lat {
   font-weight: bolder;
   font-size: smaller;
   margin-bottom: 5px;
-
 }
 
-.co_ord .long{
+.co_ord .long {
   font-weight: bolder;
   font-size: smaller;
-
 }
 
-.lat span{
+.lat span {
   font-weight: lighter;
 }
 
-.long span{
+.long span {
   font-weight: lighter;
-
 }
-
 
 .pay_Mtd {
   margin-top: 35px;
@@ -217,8 +212,6 @@ position: relative;
 .last_Login span {
   font-size: smaller;
 }
-
-
 
 h4 span {
   font-weight: lighter;
@@ -284,4 +277,19 @@ h4 span {
   font-weight: bolder;
   color: black;
   text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .profile_front {
+    max-width: 450px;
+  }
+
+  .URL {
+    /* max-width: 300px; */
+  }
+
+  .profile_Block {
+    position: relative;
+    left: 220px;
+  }
 }

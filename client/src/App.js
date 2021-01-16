@@ -17,7 +17,7 @@ function App() {
     const fetchPosts = async () => {
       setLoading(true);
       const res = await axios(
-        `http://api.enye.tech/v1/challenge/records?records=${query}`
+        `https://api.enye.tech/v1/challenge/records?records=${query}`
       );
       setPosts(res.data.records.profiles);
       setLoading(false);

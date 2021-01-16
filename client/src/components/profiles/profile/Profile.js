@@ -13,7 +13,8 @@ export const Profile = ({ post }) => {
     <div onClick={toggle}>
 
       <div className={profileDetails ? "display" : "list_GroupItem"}>
-        <Main post={post} />
+
+        <Main post={post} close={profileDetails}  />
         <Details post={post} close={profileDetails} />
         <div className="profile_fadeBottom" />
       </div>

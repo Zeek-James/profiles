@@ -20,3 +20,54 @@
   top: 50%;
   right: 50%;
 }
+
+@media (max-width: 800px) {
+  .profile_Container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+
+@media screen and (min-width: 1171px) {
+  .profile_Container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "profile";
+   }
+  
+  }
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .profile_Container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "profile";
+  }
+  
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .profile_Container {
+      grid-template-columns: repeat(2, 1fr); 
+    
+      grid-template-areas: "profile";
+    } }
+      
+  
+
+
+@media (max-width: 600px) {
+  .profile_Container {
+    grid-template-columns: 1fr;
+  grid-template-areas: "profile";
+
+  }
+
+  
+
+  .URL{
+  max-width: 50px;
+
+  }
+}
