@@ -5,9 +5,9 @@ import './search.css'
 export const Search = ({getQuery}) => {
   const [text, setText] = useState("");
 
-  const onClick = () => {
-    getQuery(text);
-    setText('')
+  const onChange = (q) => {
+    getQuery(q);
+    setText(q)
   };
 
   return (
@@ -18,9 +18,8 @@ export const Search = ({getQuery}) => {
           className="form_Control"
           placeholder="Search..."
           value={text}
-          onChange={(e) => setText(e.target.value)}
+          onChange={(e) => onChange(e.target.value)}
         />
-        <button className='search' onClick={onClick}>Search </button>
       </form>
     </section>
   );

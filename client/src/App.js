@@ -11,22 +11,19 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage ] = useState(20);
   const [query, setQuery] = useState('')
-  const [page, setPage] = useState('')
 
 
   useEffect(() => {
     const fetchPosts = async () => {
       setLoading(true);
       const res = await axios(
-        `http://api.enye.tech/v1/challenge/records?name=${query}`
+        `http://api.enye.tech/v1/challenge/records?records=${query}`
       );
-
       setPosts(res.data.records.profiles);
       setLoading(false);
-      console.log(res.data.records.profiles)
     };
     fetchPosts();
-  }, [query, page]);
+  }, [query]);
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
@@ -37,7 +34,7 @@ const paginate = (pageNumber) => setCurrentPage(pageNumber)
   return (
     <div className="container">
       <div className="tp">
-        <Nav postsPerPage={postsPerPage} loading={(p) => setPage(p)} totalPosts={posts.length} paginate={paginate}/>
+        <Nav postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate}/>
       
         <Search getQuery = {(q) => setQuery(q)}/>
       </div>

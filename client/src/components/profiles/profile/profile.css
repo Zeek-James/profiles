@@ -100,9 +100,17 @@
 }
 
 .domain_Name {
+  position: relative;
   padding: 5px 20px;
   font-weight: bolder;
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
+  top: 10px;
+}
+
+.domain_Name span{
+  /* font-size: smaller; */
+  font-weight: lighter;
+  margin-left: 10px;
 }
 
 .phone {
